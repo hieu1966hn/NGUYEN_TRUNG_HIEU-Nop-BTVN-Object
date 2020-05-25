@@ -97,39 +97,39 @@ false   :   undefined, Null, NaN,``, 0,false
 
 // }
 //////////////////Bai 05:
-let sanPham = [
-    {
-        name: `Xiaomi portable charger 20000mah`,
-        brand: `Xiaomi`,
-        price: `428`,
-        color: `White`,
-        category: `Charger`,
-    },
-    //////////
-    {
-        name: `VSmart Active 1 `,
-        brand: `VSmart`,
-        price: `5487`,
-        color: `Black`,
-        category: `Phone`,
-    },
-    ////////////////
-    {
-        name: `IPhone X`,
-        brand: `Apple`,
-        price: `21490`,
-        color: `Gray`,
-        category: `Phone`,
-    },
-    ////
-    {
-        name: `Samsung Galaxy A9`,
-        brand: `Samsung`,
-        price: `8490`,
-        color: `Blue`,
-        category: `Phone`,
-    }
-];
+// let sanPham = [
+//     {
+//         name: `Xiaomi portable charger 20000mah`,
+//         brand: `Xiaomi`,
+//         price: `428`,
+//         color: `White`,
+//         category: `Charger`,
+//     },
+//     //////////
+//     {
+//         name: `VSmart Active 1 `,
+//         brand: `VSmart`,
+//         price: `5487`,
+//         color: `Black`,
+//         category: `Phone`,
+//     },
+//     ////////////////
+//     {
+//         name: `IPhone X`,
+//         brand: `Apple`,
+//         price: `21490`,
+//         color: `Gray`,
+//         category: `Phone`,
+//     },
+//     ////
+//     {
+//         name: `Samsung Galaxy A9`,
+//         brand: `Samsung`,
+//         price: `8490`,
+//         color: `Blue`,
+//         category: `Phone`,
+//     }
+// ];
 ////////// in ra name va price 
 // for(let key in sanPham){
 //     console.log(sanPham[key].name);
@@ -176,10 +176,10 @@ for (let i = 0; i < sanPham.length; i++) {
 // }
 
 ////////// bai 5.4: them nha cung cap cho moi san pham 
-sanPham[0].providers = (`Phukienzero Dientuccc`);
-sanPham[1].providers = (`Tgdd Ddghn VhStore`);
-sanPham[2].providers = (`Tgdd`);
-sanPham[3].providers = (`Tgdd`);
+// sanPham[0].providers = (`Phukienzero Dientuccc`);
+// sanPham[1].providers = (`Tgdd Ddghn VhStore`);
+// sanPham[2].providers = (`Tgdd`);
+// sanPham[3].providers = (`Tgdd`);
 
 // for(let key of sanPham){
 //     console.log(`name: ${key.name}`);
@@ -219,3 +219,126 @@ for (let i = 0; i < sanPham.length; i++) {
     }
 }
 */
+/// bai 06: 
+// let ip = [
+//     {
+//         task: 'HTML',
+//         complete: false,
+//     },
+//     //////
+//     {
+//         task: 'CSS',
+//         complete: false,
+//     },
+//     /////////
+//     {
+//         task: 'Basic of JavaScript',
+//         complete: false,
+//     },
+//     ///////
+//     {
+//         task: 'Node Package Manger (npm)',
+//         complete: false,
+//     },
+//     /////////
+//     {
+//         task: 'Git',
+//         complete: false,
+//     }
+//     ///////
+// ];
+// function showArr(arr) {
+//     console.log(`Hi there, this is learning tasks to front-end developer career:`);
+//     for (let i = 0; i < arr.length; i++) {
+//         console.log((i + 1) + `. ` + arr[i].task);
+//         console.log(`   Complete: ` + arr[i].complete);
+//     }
+// }
+// function timeTable(arr){
+//     for(let i =0;i<arr.length;i++){
+//         if(arr[i].complete === true ){
+//             console.log(`[x]`+arr[i].task);
+
+//         }
+//         else{
+//             console.log(`[ ]`+arr[i].task);
+
+//         }
+//     }
+// }
+// showArr(ip);
+
+// let loop = true;
+// while (loop === true) {
+//     let key = prompt(`nhap vao tuy chon: (New, Delete, Update, Complete)`).toLowerCase();
+//     if (key === `new`) {
+//         let input = prompt(`nhap vao new task:`);
+//         let newTask = {
+//             task: input,
+//             complete: false,
+//         };
+//         ip.push(newTask);
+//         showArr(ip);
+//     }
+//     else if (key === `delete`) {
+//         let positionDelete = Number(prompt(`nhap vao vi tri ban muon xoa :`));
+//         if (positionDelete < 1 || positionDelete >= ip.length) {
+//             alert(`khong co gia tri nao de xoa/ ban nhap sai gia tri`);
+//         }
+//         else {
+//             ip.splice((positionDelete - 1), 1);
+//         }
+//         showArr(ip);
+//     }
+//     else if(key === `update`){
+//         let updatePosition = Number(prompt(`nhap vao vi tri ban muon update no:`));
+//         let updateArray = prompt(`nhap vao gia tri ban muon update no:`);
+//         let newUpdateArray = {
+//             task: updateArray,
+//             complete: false,
+//         };
+//         if(updatePosition <1 || updatePosition > ip.length){
+//             alert(`vi tri update khong ton tai`);
+//         }
+//         else{
+
+//             ip.splice(updatePosition-1,1,newUpdateArray);
+//         }
+//         showArr(ip);
+//     }
+//     else if(key === `complete`){
+//         input = Number(prompt(`Enter position:`)) ;
+//         ip[input-1].complete = true;
+//         showArr(ip);
+//     }
+//     timeTable(ip);
+
+// loop = prompt(`ban co muon tiep tuc vong lap: loop = true/false`).toLowerCase();
+// }
+/// bai 16:
+// const oldData = {
+//     firedRice: {
+//         Price: 30,
+//         vnName: `Com rang dua bo`
+//     },
+//     noddle: {
+//         price: 20,
+//         vnName: `My tom chanh`
+//     },
+//     pho: {
+//         price: 35,
+//         vnName: `Pho bo tai chin`
+//     },
+// };
+// ///cach 1:
+// // let {noddle,pho,firedRice}= oldData;
+// // let newdata= {firedRice,pho,noddle};
+// // console.log(newdata);
+// /////////cach 2:
+// let newdata = oldData;
+// delete newdata.noddle;
+// console.log(newdata);
+
+
+
+
